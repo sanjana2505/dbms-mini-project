@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>User Details</title>
+	<script type="text/javascript">
+	
+		document.onkeydown=function(t) 
+		{
+			if(t.which==9)
+			{
+				window.alert('Please Fill This Field');
+				
+				return false;
+			}
+		}
+    </script>
+</head>
+<style>
+	label{display:inline-block;width:100px;margin-bottom:10px;}
+</style>
+
+<body background="user_2.jpg">
+	<br>
+<h1><center> <u><font color="darkblue"> User Form </font> </u> </center></h1>
+<center>
+
+<form method="POST" action="user.php" name="testform" onSubmit="language.html">
+	<br> 
+
+<table> 
+	<h2> <font color="darkblue"> Enter Your Details </font> </h2> 
+	<br>
+
+
+	<tr>
+		<td><b><font color="darkblue"> User Name *: </font></b></td>
+		<td><input type="text" name="user_name"  onfocus="myFunctions(this)" required ></input></td>
+	</tr>
+	<tr>
+		<td><b><font color="darkblue"> User ID *: </font></b></td>
+		<td><input type="text" name="user_id"  onfocus="myFunctions(this)"   required ></input></td>
+	</tr>
+
+	<tr>
+		<td><b><font color="darkblue">Phone_No:</font> </b></td>
+		<td> <input type="text" id="phone_no" name="phone_no" onkeypress="phone_no()" maxlength="10" pattern="[1-9]{1}[0-9]{9}" required></input></td>
+	</tr>
+	 <!-- <tr>		
+		<td><b><font color="red">Language:</font></b></td> 
+		<td>
+		<select name="lang">
+			  <option value="01-Telugu">01-Telugu</option>
+			  <option value="02-Kannada">02-Kannada</option>
+			  <option value="03-Tamil">03-Tamil</option>
+			  <option value="04-Malayalam">04-Malayalam</option>
+		</select>
+		</td>
+	</tr>  -->
+	<tr>
+		<td><b><font color="darkblue">Date *:    </font> </b></td>
+		<td> <input type="date" name="add_date"  onfocus="myFunctions(this)"  required /></td>
+	</tr>
+	
+	<tr> <br>
+		<td><b><br> <input type="submit" value="Submit" onClick="return validate()"></input></b></td>
+	
+			<td><b> <br> <input type="reset" value="Reset"></input></b></td>
+		</tr>
+
+ <script>
+	function validate()
+	{
+		if(!isError){
+			alert ("Login Successfull ! ")
+
+		}
+			
+	}
+	</script> 
+	
+<script>
+	function myFunctions(x)
+	 {
+  		x.style.background = "pink";
+	}
+</script>
+
+</table>
+</form>
+</center>
+</body>
+</html>

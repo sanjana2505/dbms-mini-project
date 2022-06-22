@@ -1,0 +1,14 @@
+
+		TRIGGER
+
+
+CREATE TRIGGER `userlog` AFTER INSERT ON `user` FOR EACH ROW INSERT INTO user_log VALUES (new.user_name, new.user_id, new.phone_no,new.add_date,NOW())
+
+
+		STORE PROCEDURE
+
+DELIMITER $$
+ 
+CREATE DEFINER = `root`@`localhost` PROCEDURE `user_log_details`() NO SQL
+select * from user_log 
+$$ DELIMITER ;

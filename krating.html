@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>rating</title>
+</head>
+<body  background="movierating copy 2.jpg"  >
+<center>
+	<h1>	<br><br><br>
+		<u><font color="darkblue">User Rating</font> </u>
+	</h1>
+<form method="POST" action="rating.php" name="testform" onSubmit="return validate()">
+
+<table>
+	<tr>
+	<td> <b><font color="darkblue">User_id:</font>  </b> </td> <br/> <br> <br> 
+	<td>
+  <input type="text"name="user_id"size="5" onfocus="myFunctions(this)"  required> </input>
+	</td>
+	</tr> 
+
+	<!-- <tr>
+	<td> <b> <font color="darkblue">Movie_Name :</font></b> </td>
+	<td><input 	type="text"name="movie_name"size="20" 			onfocus="myFunctions(this)" required> </input>
+	</td>
+  </tr> -->
+  <tr>
+    <td> <b> <font color="darkblue">Movie_Name :</font></b> </td>
+    <td>
+      <select name="movie_name">
+      <option value="kgf">kgf</option>
+      <option value="madagaja">madagaja</option>
+     <option value="pogaru">pogaru</option>
+    <option value="tagaru">tagaru</option>
+      <option value="rajakumara">rajakumara</option>
+    <option value="kiss">kiss</option>
+      <option value="robert">robert</option>  
+      <option value="yuvarathna">yuvarathna</option> 
+
+  
+       </option>
+    
+    </select>
+  
+    </td>
+    </tr>
+
+	<!-- <tr>
+	<td> <b> Date :</b> </td>
+	<td><input type="date"name="add_date" onfocus="myFunctions(this)" required> </input>
+	</td>
+	</tr> -->
+
+	<tr>		
+	<td><b><font color="darkblue">Rating Out Of 5 </font>:</b></td> 
+		<td>
+		<select name="rating">
+	  <option value="1">1</option>
+	  <option value="1.5">1.5</option>
+ 	<option value="2">2</option>
+	<option value="2.5">2.5</option>
+  	<option value="3">3</option>
+	<option value="3.5">3.5</option>
+  	<option value="4">4</option>  
+  	<option value="4.5">4.5</option> 
+	<option value="5">5</option>
+
+   	</option>
+  
+	</select>
+	</td>
+  </tr>
+  <tr>
+    <td> <b> <font color="darkblue">Comment:</font></b> </td>
+    <td><input 	type="text"name="comment"size="20" onfocus="myFunctions(this)" required> </input>
+    </td>
+    </tr>
+	
+	<tr> <br>
+	<td><td><b> <input type="submit"  		value="Submit"> </input></b></td></td>
+  </tr>
+
+
+	<script>
+	function validate()
+	{
+		alert ("Thank You For Rating Us ! ")
+	}
+	</script>
+
+</table>
+</center>
+</form>
+</body>
+</html>
